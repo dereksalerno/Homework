@@ -1,0 +1,108 @@
+//Name: Derek Salerno
+//Course: CSC210 Fall 2012
+//Project #4
+//9/22/2012
+//Program description: This program calculates the credit-worthiness of the user.
+//Instructions:  Follow the prompt.  Use whole numbers (integers).
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int creditPoints = 0;                  //Declare variables
+int age;
+int yearsAtAddress;
+int income;
+int yearsAtJob;
+cout << "Welcome to JSR Credit Company!" << endl;   //The initial setup
+cout << "Apply in just 4 easy steps:" << endl;
+cout << "1.  What is your age?" << endl;
+cin >> age;
+if (age <= 20)
+{
+creditPoints = creditPoints -10;
+}
+else if ((age >= 21) && (age <= 30))
+{
+creditPoints = creditPoints;
+}
+else if ((age >= 31) && (age <= 50))
+{
+creditPoints = creditPoints + 20;
+}
+else if (age > 50)
+{
+creditPoints = creditPoints + 25;
+}
+cout << "2.  How many years have you been living at your current address?" << endl;
+cout << "NOTE : If less than 1 year - Enter 0" << endl;
+cin >> yearsAtAddress;
+if (yearsAtAddress < 1)
+{
+creditPoints = creditPoints -5;
+}
+else if ((yearsAtAddress >= 1) && (yearsAtAddress <= 3))
+{
+creditPoints = creditPoints + 5;
+}
+else if ((yearsAtAddress >= 4) && (yearsAtAddress <= 8))
+{
+creditPoints = creditPoints + 12;
+}
+else if (yearsAtAddress >= 9)
+{
+creditPoints = creditPoints + 20;
+}
+cout << "3.  What is your annual income? " << endl;
+cin >> income;
+if (income <= 15000)
+{
+creditPoints = creditPoints ;
+}
+else if ((income >= 15001) && (income <= 25000))
+{
+creditPoints = creditPoints + 12;
+}
+else if ((income >= 25001) && (income <= 40000))
+{
+creditPoints = creditPoints + 24;
+}
+else if (income > 40000)
+{
+creditPoints = creditPoints + 30;
+}
+cout << "4.  How many years have yout been at your current job?" << endl;
+cin >> yearsAtJob;
+if (yearsAtJob < 2)
+{
+creditPoints = creditPoints -4;
+}
+else if ((yearsAtJob >= 2) && (yearsAtJob <= 4))
+{
+creditPoints = creditPoints + 8;
+}
+else if (yearsAtJob > 4)
+{
+creditPoints = creditPoints + 15;
+}
+
+cout << "You have " << creditPoints << " points." << endl;
+
+if ((creditPoints >= -19) && (creditPoints <= 20))
+{
+cout << "No card issued." << endl;
+}
+else if ((creditPoints >= 21) && (creditPoints <= 35))
+{
+cout << "Card issued with $500 credit limit" << endl;
+}
+else if ((creditPoints >= 36) && (creditPoints <= 60))
+{
+cout << "Card issued with $2000 credit limit" << endl;
+}
+else if ((creditPoints >= 61) && (creditPoints <= 90))
+{
+cout << "Card issued with $5000 credit limit" << endl;
+}
+return 0;
+}
