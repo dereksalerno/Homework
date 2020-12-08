@@ -1,0 +1,53 @@
+public class BitShift{
+	public static void main(String[] args){
+	String s1 = "0x800";
+	long l1 = 0x800;
+	System.out.println("s1: " + s1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	l1 >>= 1;
+	System.out.println(l1);
+	System.out.println(Long.toBinaryString(l1));
+	}
+}
